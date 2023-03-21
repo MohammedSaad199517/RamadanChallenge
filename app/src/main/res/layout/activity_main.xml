@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2D1C7D"
+    app:layoutDescription="@xml/activity_main_scene">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/ramadan4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <LinearLayout
+        android:id="@+id/iftar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fasting"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iftar"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04:42 AM"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="06:14 PM"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/second_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/ramadan5"
+        app:lottie_autoPlay="true"
+        />
+    <LinearLayout
+
+        android:id="@+id/arrow_up_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="20dp"
+        android:layout_marginBottom="24dp"
+
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/arrow_up"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:rotation="180"
+            app:lottie_rawRes="@raw/arrow"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/time_salah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@drawable/background"
+        android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fajr"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dhuhr"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Asr"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maghrib"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Isha"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="04:42 AM"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12:11 PM"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="03:37 PM"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="06:14 PM"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+                    <TextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="07:44 PM"
+                        android:textSize="@dimen/text_medium"
+                        android:layout_marginBottom="12dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/arrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:lottie_rawRes="@raw/arrow"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
