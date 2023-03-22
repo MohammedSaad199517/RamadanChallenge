@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#2D1C7D"
+    android:background="@color/main_background"
     app:layoutDescription="@xml/activity_main_scene">
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/main_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:lottie_rawRes="@raw/ramadan4"
+        app:lottie_rawRes="@raw/main_image"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
+
     <LinearLayout
-        android:id="@+id/iftar"
+        android:id="@+id/iftar_time"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background"
@@ -69,12 +70,11 @@
         android:id="@+id/second_image"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        app:lottie_rawRes="@raw/ramadan5"
+        app:lottie_rawRes="@raw/second_image"
         app:lottie_autoPlay="true"
+        app:lottie_loop ="true"
         />
     <LinearLayout
-
         android:id="@+id/arrow_up_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:padding="20dp"
         android:layout_marginBottom="24dp"
-
         android:gravity="center">
 
         <com.airbnb.lottie.LottieAnimationView
